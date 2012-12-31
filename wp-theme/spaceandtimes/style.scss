@@ -202,7 +202,7 @@ nav {
 
 .content {
   margin:0 auto;
-  max-width:800px;
+  max-width:700px;
 }
 
 h1 {
@@ -266,9 +266,11 @@ h2 {
   }
 }
 h3 {
+  font-family:'Gibson', 'Helvetica Neue' 'Helvetica', 'Arial', 'sans-serif';
   font-style:italic;
   color:#333;
   font-size:1.5em;
+  margin-top:2em;
 }
 h5 {
   font-family:'Gibson', 'Helvetica Neue' 'Helvetica', 'Arial', 'sans-serif';
@@ -283,6 +285,9 @@ h6 {
   font-weight:100;
   margin:0;
   text-transform:uppercase;
+}
+figcaption {
+  font-size:0.9em;
 }
 
 .separator {
@@ -664,6 +669,17 @@ footer {
 
 @font-face {
     font-family: 'Gibson';
+    src: url('fonts/Gibson/Gibson-BoldItalic-webfont.eot');
+    src: url('fonts/Gibson/Gibson-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Gibson/Gibson-BoldItalic-webfont.woff') format('woff'),
+         url('fonts/Gibson/Gibson-BoldItalic-webfont.ttf') format('truetype'),
+         url('fonts/Gibson/Gibson-BoldItalic-webfont.svg#Gibson') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gibson';
     src: url('fonts/Gibson/Gibson-Light-webfont.eot');
     src: url('fonts/Gibson/Gibson-Light-webfont.eot?#iefix') format('embedded-opentype'),
          url('fonts/Gibson/Gibson-Light-webfont.woff') format('woff'),
@@ -672,6 +688,7 @@ footer {
     font-weight: 100;
     font-style: normal;
 }
+
 
 
 
