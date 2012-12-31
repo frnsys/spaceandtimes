@@ -395,6 +395,11 @@ h6 {
   margin-top:1em;
   font-family:'Gibson';
   font-weight:100;
+  opacity:0.3;
+
+  &:hover {
+    opacity:1;
+  }
 
   li {
     @extend .has-transition;

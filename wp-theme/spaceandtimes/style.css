@@ -455,7 +455,10 @@ h6 {
   width: 14em;
   margin-top: 1em;
   font-family: 'Gibson';
-  font-weight: 100; }
+  font-weight: 100;
+  opacity: 0.3; }
+  .shortcuts:hover {
+    opacity: 1; }
   .shortcuts li {
     margin: 0.5em 0;
     padding: 0.2em 0.4em; }
