@@ -32,6 +32,9 @@
 		<?php get_search_form(); ?>
 	</div>
 
+	<!-- gift wrapped -->
+	<div class="shell">
+
 	<header class="primary">
 		<a href="/">
 			<img src="<?php echo get_template_directory_uri(); ?>/images/id.png" class="id">

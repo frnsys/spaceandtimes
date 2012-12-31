@@ -105,11 +105,20 @@ body {
   background:#f8f8f8;
   padding:0 0 8em 0;
   position:relative;
+  height:100%;
 }
 
 html {
   color:#111;
   font-family:"Gentium Book Basic", "Georgia", "serif";
+  height:100%;
+}
+
+.shell {
+  min-height:100%;
+  height:auto !important;
+  height:100%;
+  margin:0 auto -3.5em 0;
 }
 
 a, a:visited, a:hover {
@@ -123,7 +132,7 @@ a, a:visited, a:hover {
 .primary {
   padding:2em 2em;
   overflow:hidden;
-  font-family: 'Gibson';
+  font-family: 'Gibson', 'Helvetica Neue' 'Helvetica', 'Arial', 'sans-serif';
   font-weight:100;
   text-align:center;
   z-index:-1;
@@ -175,7 +184,6 @@ nav {
       display:block;
       width:100%;
       height:100%;
-      text-transform: lowercase;
     }
 
     &:hover {
@@ -199,7 +207,7 @@ nav {
 
 h1 {
   text-align:center;
-  font-family:'Nexa';
+  font-family:'Nexa', 'Gibson', 'Helvetica Neue' 'Helvetica', 'Arial', 'sans-serif';
   text-transform:uppercase;
   position:relative;
 
@@ -263,14 +271,14 @@ h3 {
   font-size:1.5em;
 }
 h5 {
-  font-family:"Gibson";
+  font-family:'Gibson', 'Helvetica Neue' 'Helvetica', 'Arial', 'sans-serif';
   font-weight:100;
   font-size:1.2em;
   text-align:center;
   margin:0;
 }
 h6 {
-  font-family:'Gibson';
+  font-family:'Gibson', 'Helvetica Neue' 'Helvetica', 'Arial', 'sans-serif';
   color:#bbb;
   font-weight:100;
   margin:0;
@@ -337,6 +345,8 @@ h6 {
   }
 }
 .pages {
+  overflow:hidden;
+  margin-bottom:4em;
   .next, .prev {
     background:$highlightColor;
     border:1px solid darken($highlightColor, 6%);
@@ -345,6 +355,14 @@ h6 {
       background:darken($highlightColor, 8%);
     }
   }
+  .next {
+    float:right;
+  }
+  .prev {
+    float:left;
+  }
+}
+.shortcut-pages {
   .next {
     float:right;
   }
@@ -399,6 +417,10 @@ h6 {
 
   &:hover {
     opacity:1;
+
+    li.selected {
+      background:$highlightColor;
+    }
   }
 
   li {
@@ -407,7 +429,7 @@ h6 {
     padding:0.2em 0.4em;
 
     &.selected {
-      background:$highlightColor;
+      background:#BEBEBE;
       a, a:visited, a:hover {
         color:#fff;
       }
@@ -415,12 +437,45 @@ h6 {
   }
 
   li:first-child {
-    font-family:"Gentium Book Basic", "Georgia", "serif";
-    font-style:italic;
     color:#999;
     font-size:0.8em;
     border-bottom:1px solid #ddd;
     margin:0 0 0.5em 0;
+    overflow:hidden;
+    position:relative;
+
+    .input-wrapper {
+      width:100%;
+      padding-right:24px;
+    }
+
+    input[type='text'] {
+      font-family:"Gentium Book Basic", "Georgia", "serif";
+      font-style:italic;
+      border:none;
+      background:none;
+      width:100%;
+    }
+
+    input[type='submit'] {
+      @extend .has-transition;
+      opacity:0.2;
+      text-indent:-9999em;
+      height:20px;
+      width:20px;
+      margin:0px;
+      border:none;
+      position:absolute;
+      bottom:2px;
+      right:0;
+
+      background:url('images/nav.png');
+        -webkit-background-size:60px 20px;
+        -moz-background-size:60px 20px;
+        -o-background-size:60px 20px;
+        background-size:60px 20px;
+      background-position:-40px 0;
+    }
   }
 
   a, a:visited {
@@ -468,7 +523,7 @@ h6 {
   margin:0 auto;
 
   input[type='text'] {
-    font-family:'Gibson', 'HelveticaNeue' 'Helvetica', 'Arial', 'sans-serif';
+    font-family:'Gibson', 'Helvetica Neue' 'Helvetica', 'Arial', 'sans-serif';
     font-weight:100;
     font-size:2.4em;
     padding:0.2em 0.5em;
@@ -495,12 +550,10 @@ h6 {
 
 footer {
   background:#222;
-  position:absolute;
-  bottom:0;
   width:100%;
   padding:2.2em 2em;
   color:#fff;
-  font-family:'Gibson';
+  font-family:'Gibson', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
   font-weight:100;
   font-size:1.2em;
 }

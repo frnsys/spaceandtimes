@@ -16,19 +16,21 @@ $(function() {
 		};
 	});
 
-	$('.shortcuts a').on('click', function() {
+	$('.shortcuts li[class!=shortcut-pages] a').on('click', function(e) {
+		e.preventDefault();
+
 		currentPost = $(this).closest('li').index() - 1;
 		highlightPost( currentPost );
 
-		jumping = true;
-
 		var targetPos = $('a[name=' + $(this).attr('href').substring(1) + ']').closest('.post').offset().top - 60;
+		jumping = true;
 		$('body, html').animate({
 			scrollTop: targetPos
 		}, function() {
 			jumping = false;
 		});
 
+		return false;
 	});
 
 	// Scroll post highlighting

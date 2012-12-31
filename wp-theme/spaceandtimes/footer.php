@@ -2,6 +2,8 @@
 		</div><!-- .content -->
 	</div><!-- .main -->
 
+	</div><!-- .shell -->
+
 	<footer>
 		<a href="http://supermedes.com"><img src="<?php echo get_template_directory_uri(); ?>/images/avatar.png" class="avatar"></a>
 		Space & Times is the blog of <a href="http://supermedes.com">Francis Tseng</a>.
