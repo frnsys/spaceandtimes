@@ -249,6 +249,11 @@ article {
     width:auto !important;
     height:auto !important;
   }
+
+  ul, li {
+    list-style-type: square;
+    margin:0 0 0 1.2em;
+  }
 }
 .meta {
   float:right;
