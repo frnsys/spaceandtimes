@@ -2,7 +2,7 @@
 
 			<?php if ( have_posts() ) : ?>
 
-				<h1><?php printf( __( 'Results for: <b>%s</b>', 'spaceandtimes' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+				<h1 class="results-title"><span><?php printf( __( 'Results for: <b>%s</b>', 'spaceandtimes' ), '<span>' . get_search_query() . '</span>' ); ?></span></h1>
 
 				<?php /* Start the Loop */ ?>
 				<?php while ( have_posts() ) : the_post(); ?>

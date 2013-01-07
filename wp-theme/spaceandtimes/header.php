@@ -37,7 +37,7 @@
 
 	<header class="primary">
 		<a href="/">
-			<img src="<?php echo get_template_directory_uri(); ?>/images/id.png" class="id">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/avatar.png" class="id">
 			<h1>
 				<span>Space & Times</span>
 				<hr>
@@ -46,10 +46,34 @@
 		<nav>
 			<ul>
 				<li class="portfolio"><a href="http://supermedes.com">portfolio</a></li>
-				<li class="twitter"><a href="http://twitter.com/spaceandtimes">twitter</a></li>
+				<li class="twitter"><a href="http://twitter.com/frnsys">twitter</a></li>
 				<li class="search">search</li>
 			</ul>
 		</nav>
+
+		
+<?php if(have_posts()) : ?>
+	<ul class="shortcuts">
+		<li>
+			<form method="get" id="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+				<div class="input-wrapper">
+					<input type="text" class="field" name="s" id="s" placeholder="Search..." />
+				</div>
+				<input type="submit" class="submit" name="submit" id="searchsubmit" value="Go!" />
+			</form>
+		</li>
+	  <?php while(have_posts()) : the_post(); ?>
+
+	  	<li><a href="#<?php echo preg_replace("/[^A-Za-z0-9]/", '', get_the_title()); ?>"><?php the_title(); ?></a></li>
+
+	  <?php endwhile; ?>
+
+    <li class="shortcut-pages">
+			<?php posts_nav_link(' ','<div class="prev">&larr; Prev</div>', '<div class="next">Next &rarr;</div>'); ?>
+    </li>
+
+	</ul>
+<?php endif; ?>
 	</header>
 
 	<div role="main" class="main">

@@ -23,11 +23,6 @@
 		</div>
 	</article>
 
-		<nav class="single-pages">
-			<?php previous_post_link( '%link', __( '<div class="prev"><img src="'.get_template_directory_uri().'/images/arrow-l.png"><span>Prev</span></div>', 'spaceandtimes' ) ); ?>
-			<?php next_post_link( '%link', __( '<div class="next"><img src="'.get_template_directory_uri().'/images/arrow-r.png"><span>Next</span></div>', 'spaceandtimes' ) ); ?>
-		</nav><!-- #nav-single -->
-
 	<?php endwhile; // end of the loop. ?>
 
 <?php get_footer(); ?>

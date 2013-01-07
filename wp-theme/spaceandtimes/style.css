@@ -238,7 +238,7 @@ ul, li {
 /* ===== Primary Styles ========================================================
    Author: Francis Tseng (supermedes.com / @supermedes)
    ========================================================================== */
-.has-transition, nav li, .pages .next, .pages .prev, .single-pages .next, .single-pages .prev, .single-pages .next img, .single-pages .prev img, .single-pages span, .shortcuts, .shortcuts li, .shortcuts li:first-child input[type='submit'], .shortcuts a, .shortcuts a:visited {
+.has-transition, nav li, .pages .next, .pages .prev, .shortcuts, .shortcuts li, .shortcuts li:first-child input[type='submit'], .shortcuts a, .shortcuts a:visited {
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -259,7 +259,8 @@ html {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0 auto -3.5em 0; }
+  margin: 0 auto -3.5em auto;
+  max-width: 64em; }
 
 a, a:visited, a:hover {
   text-decoration: none;
@@ -267,19 +268,21 @@ a, a:visited, a:hover {
 
 /* Header & Nav */
 .primary {
+  position: fixed;
+  top: 0;
   padding: 2em 2em;
   overflow: hidden;
   font-family: 'Gibson', 'Helvetica Neue' 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 100;
   text-align: center;
-  z-index: -1; }
+  z-index: 1; }
   .primary h1 {
-    margin: 0.2em 0 0 0; }
+    margin: 0.6em 0 0 0; }
   .primary a, .primary a:visited, .primary a:hover {
     color: #111; }
 
 .id {
-  width: 160px; }
+  width: 120px; }
 
 .avatar {
   height: 100px; }
@@ -316,17 +319,20 @@ nav {
 
 /* Main */
 .main {
-  padding: 0 2em 2em 2em; }
+  padding: 2em 0em 2em 16em;
+  width: 100%; }
 
 .content {
   margin: 0 auto;
-  max-width: 700px; }
+  max-width: 46em;
+  padding: 0 2em; }
 
 h1 {
   text-align: center;
   font-family: 'Nexa', 'Gibson', 'Helvetica Neue' 'Helvetica', 'Arial', 'sans-serif';
   text-transform: uppercase;
-  position: relative; }
+  position: relative;
+  font-size: 1.6em; }
   h1 span {
     padding: 0.3em 0.4em 0.2em 0.4em;
     background: #f8f8f8; }
@@ -424,7 +430,7 @@ figcaption {
   margin: 1em auto;
   border-top: 1px solid #9ddcff; }
 
-.pages .next, .pages .prev, .single-pages .next, .single-pages .prev {
+.pages .next, .pages .prev {
   padding: 0.2em 0.6em;
   color: #fff;
   font-family: "Gibson";
@@ -451,35 +457,13 @@ figcaption {
 .shortcut-pages .prev {
   float: left; }
 
-.single-pages .next, .single-pages .prev {
-  position: fixed;
-  top: 26%; }
-  .single-pages .next img, .single-pages .prev img {
-    opacity: 0.2;
-    width: 30px; }
-  .single-pages .next:hover img, .single-pages .prev:hover img {
-    opacity: 0.3; }
-  .single-pages .next:hover span, .single-pages .prev:hover span {
-    opacity: 1;
-    margin-top: 1em; }
-.single-pages .next {
-  right: 3em; }
-.single-pages .prev {
-  left: 3em; }
-.single-pages span {
-  display: block;
-  margin-top: 6em;
-  opacity: 0;
-  color: #23b0ff; }
-
 .shortcuts {
-  position: fixed;
-  left: 3em;
   width: 14em;
-  margin-top: 1em;
   font-family: 'Gibson';
   font-weight: 100;
-  opacity: 0.3; }
+  text-align: left;
+  opacity: 0.3;
+  margin: 2em auto 0 auto; }
   .shortcuts:hover {
     opacity: 1; }
     .shortcuts:hover li.selected {
@@ -530,6 +514,11 @@ figcaption {
     .shortcuts a:hover, .shortcuts a:visited:hover {
       color: #23b0ff; }
 
+blockquote {
+  border-left: 6px solid #23b0ff;
+  padding-left: 1.6em;
+  margin: 1em 0; }
+
 .footnotes {
   border-top: 1px solid #ddd;
   margin-top: 3em;
@@ -574,6 +563,12 @@ figcaption {
     vertical-align: super;
     border: none; }
 
+.results-title {
+  margin-bottom: 2em; }
+  .results-title > span {
+    border: 6px solid #222;
+    padding: 0.6em 0.6em 0.4em 0.6em; }
+
 footer {
   background: #222;
   width: 100%;
@@ -589,39 +584,24 @@ footer {
 /* =============================================================================
    Media Queries
    ========================================================================== */
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 640px) {
+  .primary {
+    position: static; }
+
+  .main {
+    padding: 0; }
+
   .shortcuts {
-    width: 8.6em; } }
+    display: none; }
+
+  footer {
+    text-align: center; }
+    footer .avatar {
+      display: block;
+      margin: 0 auto 2em auto; } }
 @media only screen and (max-width: 1200px) {
-  .single-pages .next, .single-pages .prev {
-    position: relative;
-    top: auto;
-    background: #23b0ff;
-    border: 1px solid #04a5ff; }
-    .single-pages .next a, .single-pages .next a:visited, .single-pages .next a:hover, .single-pages .prev a, .single-pages .prev a:visited, .single-pages .prev a:hover {
-      color: #fff; }
-    .single-pages .next:hover, .single-pages .prev:hover {
-      background: #00a0f9; }
-      .single-pages .next:hover span, .single-pages .prev:hover span {
-        margin-top: 0em; }
-    .single-pages .next img, .single-pages .prev img {
-      display: none; }
-    .single-pages .next span, .single-pages .prev span {
-      opacity: 1;
-      margin-top: 0em;
-      color: #fff; }
-  .single-pages .next {
-    float: right;
-    right: auto; }
-  .single-pages .prev {
-    float: left;
-    left: auto; }
-
   .single-post h2 {
-    max-width: 100%; }
-
-  .shortcuts {
-    display: none; } }
+    max-width: 100%; } }
 /* =============================================================================
    Fonts
    ========================================================================== */

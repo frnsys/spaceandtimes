@@ -6,7 +6,7 @@ $(function() {
 
 	$('.search').on('click', function() {
 		$('.overlay').fadeIn( function() {
-			$('#search-form input[type=text]').focus();
+			$('.overlay #search-form input[type=text]').focus();
 		});
 	})
 
