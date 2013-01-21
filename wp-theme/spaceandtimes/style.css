@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
 /*
 Theme Name: Space & Times 
 Author: Francis Tseng
@@ -252,7 +252,7 @@ body {
 
 html {
   color: #111;
-  font-family: "Gentium Book Basic", "Georgia", "serif";
+  font-family: "Open Sans", "Verdana", "Arial", "Helvetica", "sans-serif";
   height: 100%; }
 
 .shell {
@@ -280,6 +280,10 @@ a, a:visited, a:hover {
     margin: 0.6em 0 0 0; }
   .primary a, .primary a:visited, .primary a:hover {
     color: #111; }
+  .primary:hover .shortcuts {
+    opacity: 1; }
+    .primary:hover .shortcuts li.selected {
+      background: #23b0ff; }
 
 .id {
   width: 120px; }
@@ -347,13 +351,15 @@ h1 {
 
 /* Articles */
 article {
-  margin-bottom: 6em; }
+  margin-bottom: 6em;
+  font-size: 0.9em; }
   article header {
     border-bottom: 1px solid #bce7ff;
     margin: 0 0 1.6em 0;
     overflow: hidden; }
     article header h2 {
-      float: left; }
+      float: left;
+      font-family: 'Gibson', 'Helvetica Neue' 'Helvetica', 'Arial', 'sans-serif'; }
   article img {
     max-width: 100%;
     width: auto !important;
@@ -361,6 +367,8 @@ article {
   article ul, article li {
     list-style-type: square;
     margin: 0 0 0 1.2em; }
+  article li {
+    margin: 0 0 1em 1.2em; }
 
 .meta {
   float: right;
@@ -464,10 +472,6 @@ figcaption {
   text-align: left;
   opacity: 0.3;
   margin: 2em auto 0 auto; }
-  .shortcuts:hover {
-    opacity: 1; }
-    .shortcuts:hover li.selected {
-      background: #23b0ff; }
   .shortcuts li {
     margin: 0.5em 0;
     padding: 0.2em 0.4em; }
@@ -486,7 +490,7 @@ figcaption {
       width: 100%;
       padding-right: 24px; }
     .shortcuts li:first-child input[type='text'] {
-      font-family: "Gentium Book Basic", "Georgia", "serif";
+      font-family: "Open Sans", "Verdana", "Arial", "Helvetica", "sans-serif";
       font-style: italic;
       border: none;
       background: none;
@@ -576,7 +580,9 @@ footer {
   color: #fff;
   font-family: 'Gibson', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 100;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  z-index: 100;
+  position: relative; }
 
 .avatar {
   margin-right: 1.4em; }
