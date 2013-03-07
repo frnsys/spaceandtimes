@@ -9,6 +9,7 @@
 				<h6><?php the_time('F j Y'); ?></h6>
 			</div>
 			<hr>
+			<h6 class="author">By <?php echo the_author_meta('first_name'); ?></h6>
 		</header>
 		<div class="post-content">
       <?php if ( is_category() || is_archive() ) {

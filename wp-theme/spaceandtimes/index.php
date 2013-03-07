@@ -6,7 +6,7 @@
 			<header>
 				<h2><a href="<?php the_permalink(); ?>" name="<?php echo preg_replace("/[^A-Za-z0-9]/", '', get_the_title()); ?>"><?php the_title(); ?></a></h2>
 				<div class="meta">
-					<h6><?php the_time('F j Y'); ?></h6>
+					<h6>By <?php echo the_author_meta('first_name'); ?> on <?php the_time('F j Y'); ?></h6>
 				</div>
 			</header>
 			<div class="post-content">
