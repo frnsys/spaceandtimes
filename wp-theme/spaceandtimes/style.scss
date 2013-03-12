@@ -256,9 +256,11 @@ article {
     border-bottom:1px solid lighten($highlightColor, 30%);
     margin:0 0 1.6em 0;
     overflow:hidden;
+    position:relative;
 
     h2 {
       float:left;
+      max-width:80%;
       font-family:'Gibson', 'Helvetica Neue' 'Helvetica', 'Arial', 'sans-serif';
     }  
   }
@@ -279,6 +281,9 @@ article {
 }
 .meta {
   float:right;
+  position:absolute;
+  right:0;
+  bottom:0;
   margin-top:1.3em;
 }
 
