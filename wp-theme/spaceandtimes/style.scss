@@ -110,7 +110,7 @@ body {
 
 html {
   color:#111;
-  font-family:"Open Sans", "Verdana", "Arial", "Helvetica", "sans-serif";
+  font-family:"freight-text-pro", "serif";
   height:100%;
 }
 
@@ -250,7 +250,7 @@ h1 {
 
 article {
   margin-bottom:6em;
-  font-size:0.9em;
+  font-size:1em;
 
   header {
     border-bottom:1px solid lighten($highlightColor, 30%);
@@ -444,7 +444,7 @@ figcaption {
     }
 
     input[type='text'] {
-      font-family:"Open Sans", "Verdana", "Arial", "Helvetica", "sans-serif";
+      font-family:"Gibson", "Verdana", "Arial", "Helvetica", "sans-serif";
       font-style:italic;
       border:none;
       background:none;
@@ -613,8 +613,6 @@ footer {
 /* =============================================================================
    Fonts
    ========================================================================== */
-
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
 
 @font-face {
   font-family: 'Nexa';
