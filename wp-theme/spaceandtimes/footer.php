@@ -13,8 +13,6 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/libs/jquery-1.8.3.min.js"><\/script>')</script>
-<script type="text/javascript" src="//use.typekit.net/lws3ygq.js"></script>
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
 
 </body>

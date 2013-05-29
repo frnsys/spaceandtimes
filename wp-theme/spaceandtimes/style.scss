@@ -223,7 +223,7 @@ nav {
 
 h1 {
   text-align:center;
-  font-family:'Nexa', 'Gibson', 'Helvetica Neue' 'Helvetica', 'Arial', 'sans-serif';
+  font-family:'futura-pt', 'Gibson', 'Helvetica Neue' 'Helvetica', 'Arial', 'sans-serif';
   text-transform:uppercase;
   position:relative;
   font-size:1.6em;
@@ -261,8 +261,9 @@ article {
     h2 {
       float:left;
       max-width:80%;
-      font-family:'Gibson', 'Helvetica Neue' 'Helvetica', 'Arial', 'sans-serif';
-    }  
+      font-family:'futura-pt', 'Helvetica Neue' 'Helvetica', 'Arial', 'sans-serif';
+      font-style:normal;
+    }
   }
 
   img {
@@ -618,17 +619,6 @@ footer {
 /* =============================================================================
    Fonts
    ========================================================================== */
-
-@font-face {
-  font-family: 'Nexa';
-  src: url('fonts/Nexa/nexa-bold.eot');
-  src: url('fonts/Nexa/nexa-bold.eot?#iefix') format('embedded-opentype'),
-       url('fonts/Nexa/nexa-bold.woff') format('woff'),
-       url('fonts/Nexa/nexa-bold.ttf') format('truetype'),
-       url('fonts/Nexa/nexa-bold.svg#ywftsvg') format('svg');
-  font-weight: bold;
-  font-style: normal;
-}
 
 /*
  * The fonts included are copyrighted by the vendor listed below.
