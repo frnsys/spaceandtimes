@@ -39,12 +39,12 @@ body {
   line-height: 1.4; }
 
 ::-moz-selection {
-  background: #23b0ff;
+  background: #27afda;
   color: #fff;
   text-shadow: none; }
 
 ::selection {
-  background: #23b0ff;
+  background: #27afda;
   color: #fff;
   text-shadow: none; }
 
@@ -263,7 +263,7 @@ html {
 
 a, a:visited, a:hover {
   text-decoration: none;
-  color: #23b0ff; }
+  color: #27afda; }
 
 /* Header & Nav */
 .primary {
@@ -282,7 +282,7 @@ a, a:visited, a:hover {
   .primary:hover .shortcuts {
     opacity: 1; }
     .primary:hover .shortcuts li.selected {
-      background: #23b0ff; }
+      background: #27afda; }
 
 .id {
   width: 120px; }
@@ -353,7 +353,7 @@ article {
   margin-bottom: 6em;
   font-size: 1em; }
   article header {
-    border-bottom: 1px solid #bce7ff;
+    border-bottom: 1px solid #27afda;
     margin: 0 0 1.6em 0;
     overflow: hidden;
     position: relative; }
@@ -415,8 +415,8 @@ figcaption {
   text-align: center;
   margin-top: 4em; }
   .separator img {
-    width: 20px !important;
-    height: 20px !important; }
+    width: 30px !important;
+    height: 30px !important; }
 
 .single-post h2 {
   float: none;
@@ -444,7 +444,7 @@ figcaption {
 .single-post hr {
   width: 24%;
   margin: 1em auto;
-  border-top: 1px solid #9ddcff; }
+  border-top: 1px solid #8fd6ec; }
 
 .pages .next, .pages .prev {
   padding: 0.2em 0.6em;
@@ -459,10 +459,10 @@ figcaption {
   overflow: hidden;
   margin-bottom: 4em; }
   .pages .next, .pages .prev {
-    background: #23b0ff;
-    border: 1px solid #04a5ff; }
+    background: #27afda;
+    border: 1px solid #219bc1; }
     .pages .next:hover, .pages .prev:hover {
-      background: #00a0f9; }
+      background: #2094b9; }
   .pages .next {
     float: right; }
   .pages .prev {
@@ -524,10 +524,10 @@ figcaption {
     display: block;
     width: 100%; }
     .shortcuts a:hover, .shortcuts a:visited:hover {
-      color: #23b0ff; }
+      color: #27afda; }
 
 blockquote {
-  border-left: 6px solid #23b0ff;
+  border-left: 6px solid #27afda;
   padding-left: 1.6em;
   margin: 1em 0; }
 
