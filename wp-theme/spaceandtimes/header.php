@@ -50,7 +50,7 @@
 		</a>
 		<nav>
 			<ul>
-				<li class="portfolio"><a href="http://supermedes.com">portfolio</a></li>
+				<li class="portfolio"><a href="http://frnsys.com">portfolio</a></li>
 				<li class="twitter"><a href="http://twitter.com/frnsys">twitter</a></li>
 				<li class="search">search</li>
 			</ul>
