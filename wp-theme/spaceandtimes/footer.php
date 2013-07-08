@@ -14,6 +14,7 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="<?php echo get_template_directory_uri(); ?>/js/libs/jquery-1.8.3.min.js"><\/script>')</script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/rainbow.js"></script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -359,7 +359,6 @@ article {
     position: relative; }
     article header h2 {
       float: left;
-      max-width: 80%;
       font-family: 'futura-pt', 'Helvetica Neue' 'Helvetica', 'Arial', 'sans-serif';
       font-style: normal; }
   article img {
@@ -373,11 +372,7 @@ article {
     margin: 0 0 1em 1.2em; }
 
 .meta {
-  float: right;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  margin-top: 1.3em; }
+  float: right; }
 
 h2 {
   font-size: 1.8em;
@@ -536,6 +531,24 @@ blockquote {
   padding-left: 1.6em;
   margin: 1em 0; }
 
+code, pre {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace; }
+
+code {
+  font-size: 0.8em;
+  color: #C06CDB;
+  padding: 0 0.4em; }
+
+pre {
+  font-size: 0.8em;
+  background: #F1F1F1;
+  color: #666;
+  padding: 1em;
+  width: 100%;
+  display: block;
+  word-break: break-all; }
+
 .footnotes {
   border-top: 1px solid #ddd;
   margin-top: 3em;
@@ -618,9 +631,6 @@ footer {
     footer .avatar {
       display: block;
       margin: 0 auto 2em auto; } }
-@media only screen and (max-width: 1200px) {
-  .single-post h2 {
-    max-width: 100%; } }
 /* =============================================================================
    Fonts
    ========================================================================== */
