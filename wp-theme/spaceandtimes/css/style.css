@@ -302,7 +302,7 @@ nav {
     width: 20px;
     margin: 0px 8px;
     cursor: pointer;
-    background: url("images/nav.png");
+    background: url("../images/nav.png");
     -webkit-background-size: 60px 20px;
     -moz-background-size: 60px 20px;
     -o-background-size: 60px 20px;
@@ -513,7 +513,7 @@ figcaption {
       position: absolute;
       bottom: 2px;
       right: 0;
-      background: url("images/nav.png");
+      background: url("../images/nav.png");
       -webkit-background-size: 60px 20px;
       -moz-background-size: 60px 20px;
       -o-background-size: 60px 20px;
@@ -581,7 +581,7 @@ pre {
     background: #f7f7f7;
     border: 1px solid #aaa; }
   .search-form input[type='submit'] {
-    background: url("images/search.png");
+    background: url("../images/search.png");
     -webkit-background-size: 40px 40px;
     -moz-background-size: 40px 40px;
     -o-background-size: 40px 40px;
@@ -632,34 +632,34 @@ footer {
       display: block;
       margin: 0 auto 2em auto; } }
 /* =============================================================================
-   Fonts
+   ../fonts
    ========================================================================== */
 /*
- * The fonts included are copyrighted by the vendor listed below.
+ * The ../fonts included are copyrighted by the vendor listed below.
  *
  * Vendor:      Canada Type
- * License URL: http://www.fontspring.com/fflicense/canada-type
+ * License URL: http://www.../fontspring.com/fflicense/canada-type
  *
  *
  */
 @font-face {
   font-family: 'Gibson';
-  src: url("fonts/Gibson/Gibson-Bold-webfont.eot");
-  src: url("fonts/Gibson/Gibson-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Gibson/Gibson-Bold-webfont.woff") format("woff"), url("fonts/Gibson/Gibson-Bold-webfont.ttf") format("truetype"), url("fonts/Gibson/Gibson-Bold-webfont.svg#Gibson") format("svg");
+  src: url("../fonts/Gibson/Gibson-Bold-webfont.eot");
+  src: url("../fonts/Gibson/Gibson-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Gibson/Gibson-Bold-webfont.woff") format("woff"), url("../fonts/Gibson/Gibson-Bold-webfont.ttf") format("truetype"), url("../fonts/Gibson/Gibson-Bold-webfont.svg#Gibson") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'Gibson';
-  src: url("fonts/Gibson/Gibson-BoldItalic-webfont.eot");
-  src: url("fonts/Gibson/Gibson-BoldItalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Gibson/Gibson-BoldItalic-webfont.woff") format("woff"), url("fonts/Gibson/Gibson-BoldItalic-webfont.ttf") format("truetype"), url("fonts/Gibson/Gibson-BoldItalic-webfont.svg#Gibson") format("svg");
+  src: url("../fonts/Gibson/Gibson-BoldItalic-webfont.eot");
+  src: url("../fonts/Gibson/Gibson-BoldItalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Gibson/Gibson-BoldItalic-webfont.woff") format("woff"), url("../fonts/Gibson/Gibson-BoldItalic-webfont.ttf") format("truetype"), url("../fonts/Gibson/Gibson-BoldItalic-webfont.svg#Gibson") format("svg");
   font-weight: bold;
   font-style: italic; }
 
 @font-face {
   font-family: 'Gibson';
-  src: url("fonts/Gibson/Gibson-Light-webfont.eot");
-  src: url("fonts/Gibson/Gibson-Light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Gibson/Gibson-Light-webfont.woff") format("woff"), url("fonts/Gibson/Gibson-Light-webfont.ttf") format("truetype"), url("fonts/Gibson/Gibson-Light-webfont.svg#Gibson") format("svg");
+  src: url("../fonts/Gibson/Gibson-Light-webfont.eot");
+  src: url("../fonts/Gibson/Gibson-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Gibson/Gibson-Light-webfont.woff") format("woff"), url("../fonts/Gibson/Gibson-Light-webfont.ttf") format("truetype"), url("../fonts/Gibson/Gibson-Light-webfont.svg#Gibson") format("svg");
   font-weight: 100;
   font-style: normal; }
 
