@@ -6,10 +6,9 @@
  */
 pre {
     word-wrap: break-word;
-    margin: 0px;
-    padding: 10px;
-    margin-bottom: 20px;
-    background:#F1F1F1;
+    margin: 0 0 2em 0;
+    padding: 1.5em;
+    background: #F3F3F3;
     color:#666;
 }
 
@@ -22,25 +21,25 @@ pre .comment {
 }
 
 pre .variable.global, pre .variable.class, pre .variable.instance {
-    color: #cc6666; /* red */
+    color: #ED6767;
 }
 
 pre .constant.numeric, pre .constant.language, pre .constant.hex-color, pre .keyword.unit {
-    color: #de935f; /* orange */
+    color: #F72727;
 }
 
 pre .constant, pre .entity, pre .entity.class, pre .support {
-    color: #f0c674; /* yellow */
+    color: #F72727;
 }
 
 pre .constant.symbol, pre .string {
-    color: #b5bd68; /* green */
+    color: #46CCAC;
 }
 
 pre .entity.function, pre .support.css-property, pre .selector {
-    color: #81a2be; /* blue */
+    color: #27afda;
 }
 
 pre .keyword, pre .storage {
-    color: #b294bb; /* purple */
+    color: #C06CDB;
 }
