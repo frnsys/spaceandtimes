@@ -360,7 +360,8 @@ article {
     article header h2 {
       float: left;
       font-family: 'futura-pt', 'Helvetica Neue' 'Helvetica', 'Arial', 'sans-serif';
-      font-style: normal; }
+      font-style: normal;
+      width: 100%; }
   article img {
     max-width: 100%;
     width: auto !important;
