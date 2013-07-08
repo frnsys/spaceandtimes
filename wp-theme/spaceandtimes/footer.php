@@ -5,8 +5,8 @@
 	</div><!-- .shell -->
 
 	<footer>
-		<a href="http://supermedes.com"><img src="<?php echo get_template_directory_uri(); ?>/images/avatar.png" class="avatar"></a>
-		Space & Times is the babbling of <a href="http://supermedes.com">Francis Tseng</a>.
+		<a href="http://frnsys.com"><img src="<?php echo get_template_directory_uri(); ?>/images/avatar.png" class="avatar"></a>
+		Space & Times is the babbling of <a href="http://frnsys.com">Francis Tseng</a>.
 	</footer>
 
 <?php wp_footer(); ?>
