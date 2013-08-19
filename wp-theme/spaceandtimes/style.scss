@@ -167,6 +167,27 @@ a, a:visited, a:hover {
   height:100px;
 }
 
+.categories {
+    text-align: center;
+    margin: 0 0 0.5em 0;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    a, a:visited {
+        color: #aaa;
+        border-bottom: 1px dotted #aaa;
+        border-top: 1px dotted #aaa;
+        &:hover {
+            color: #f54546;
+            border-bottom: 1px dotted $highlightColor;
+            border-top: 1px dotted $highlightColor;
+        }
+    }
+    li {
+        display: inline-block;
+        margin: 0.5em;
+    }
+}
+
 nav {
   text-align:center;
 
@@ -579,7 +600,7 @@ pre {
 
   > span {
     border:6px solid #222;
-    padding:0.6em 0.6em 0.4em 0.6em;
+    padding: 0.4em 0.6em 0.4em 0.6em;
   }
 }
 
@@ -587,7 +608,7 @@ pre {
 footer {
   background:#222;
   width:100%;
-  padding:2.2em 2em;
+  padding: 1.2em 2em 1em 2em;
   color:#fff;
   font-family:'Gibson', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
   font-weight:100;
@@ -616,6 +637,10 @@ footer {
 
   .shortcuts {
     display:none;
+  }
+
+  .categories li {
+      margin: 2em 0.5em;
   }
 
   footer {

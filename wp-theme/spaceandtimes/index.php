@@ -10,7 +10,7 @@
 				</div>
 			</header>
 			<div class="post-content">
-        <?php if ( is_category() || is_archive() ) {
+        <?php if ( is_archive() && !is_category() ) {
 						the_excerpt();
 					} else { ?>
             <?php the_content(); ?>

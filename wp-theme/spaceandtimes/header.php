@@ -48,6 +48,10 @@
 				<hr>
 			</h1>
 		</a>
+        <ul class="categories">
+            <li><a href="/topic/code">code</a></li>
+            <li><a href="/topic/etc">etc.</a></li>
+        </ul>
 		<nav>
 			<ul>
 				<li class="portfolio"><a href="http://frnsys.com">portfolio</a></li>
