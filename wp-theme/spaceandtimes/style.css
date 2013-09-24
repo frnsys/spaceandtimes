@@ -500,7 +500,7 @@ figcaption {
   margin: 2em auto 0 auto; }
   .shortcuts li {
     margin: 0.5em 0;
-    padding: 0.2em 0.4em; }
+    padding: 0 0.4em; }
     .shortcuts li.selected {
       background: #BEBEBE; }
       .shortcuts li.selected a, .shortcuts li.selected a:visited, .shortcuts li.selected a:hover {

@@ -448,7 +448,7 @@ figcaption {
   li {
     @extend .has-transition;
     margin:0.5em 0;
-    padding:0.2em 0.4em;
+    padding:0 0.4em;
 
     &.selected {
       background:#BEBEBE;
