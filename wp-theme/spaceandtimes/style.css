@@ -287,6 +287,10 @@ a, a:visited, a:hover {
 .id {
   width: 120px; }
 
+.author {
+  font-style: italic;
+  margin: 0.1em 0 0.2em 0; }
+
 .avatar {
   height: 100px; }
 
@@ -296,13 +300,11 @@ a, a:visited, a:hover {
   font-size: 0.7em;
   text-transform: uppercase; }
   .categories a, .categories a:visited {
-    color: #aaa;
-    border-bottom: 1px dotted #aaa;
-    border-top: 1px dotted #aaa; }
+    /*color: #aaa;*/
+    border-bottom: 1px dotted #27afda;
+    border-top: 1px dotted #27afda; }
     .categories a:hover, .categories a:visited:hover {
-      color: #f54546;
-      border-bottom: 1px dotted #27afda;
-      border-top: 1px dotted #27afda; }
+      color: #f54546; }
   .categories li {
     display: inline-block;
     margin: 0.5em; }
@@ -524,7 +526,7 @@ figcaption {
     .shortcuts li:first-child input[type='submit'] {
       opacity: 0.2;
       text-indent: -9999em;
-      height: 20px;
+      height: 18px;
       width: 20px;
       margin: 0px;
       border: none;

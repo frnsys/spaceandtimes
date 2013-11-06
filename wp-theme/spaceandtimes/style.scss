@@ -162,6 +162,10 @@ a, a:visited, a:hover {
 .id {
   width:120px;
 }
+.author {
+    font-style: italic;
+    margin: 0.1em 0 0.2em 0;
+}
 
 .avatar {
   height:100px;
@@ -173,13 +177,11 @@ a, a:visited, a:hover {
     font-size: 0.7em;
     text-transform: uppercase;
     a, a:visited {
-        color: #aaa;
-        border-bottom: 1px dotted #aaa;
-        border-top: 1px dotted #aaa;
+        /*color: #aaa;*/
+        border-bottom: 1px dotted $highlightColor;
+        border-top: 1px dotted $highlightColor;
         &:hover {
             color: #f54546;
-            border-bottom: 1px dotted $highlightColor;
-            border-top: 1px dotted $highlightColor;
         }
     }
     li {
@@ -483,7 +485,7 @@ figcaption {
       @extend .has-transition;
       opacity:0.2;
       text-indent:-9999em;
-      height:20px;
+      height:18px;
       width:20px;
       margin:0px;
       border:none;
