@@ -50,7 +50,6 @@
 		</a>
         <ul class="categories">
             <li><a href="/topic/code">code</a></li>
-            <!--<li><a href="/topic/artefacts">artefacts</a></li>-->
             <li><a href="/topic/etc">etc.</a></li>
         </ul>
 		<nav>

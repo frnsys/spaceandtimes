@@ -1,3 +1,8 @@
+<?php if ( !is_archive() && !is_category() ) {
+    global $query_string;
+    query_posts( $query_string . '&cat=-2' );
+} ?>
+
 <?php get_header(); ?>
  
   <?php if(have_posts()) : ?><?php while(have_posts()) : the_post(); ?>
