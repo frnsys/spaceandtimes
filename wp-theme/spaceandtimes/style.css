@@ -429,7 +429,8 @@ h6 {
   text-transform: uppercase; }
 
 figcaption {
-  font-size: 0.9em; }
+  font-size: 0.9em;
+  color: #888; }
 
 .separator {
   text-align: center;
