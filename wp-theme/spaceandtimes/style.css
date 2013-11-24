@@ -237,7 +237,7 @@ ul, li {
 /* ===== Primary Styles ========================================================
    Author: Francis Tseng (supermedes.com / @supermedes)
    ========================================================================== */
-.has-transition, nav li, .pages .next, .pages .prev, .shortcuts, .shortcuts li, .shortcuts li:first-child input[type='submit'], .shortcuts a, .shortcuts a:visited {
+.has-transition, nav li, .say-hello, .pages .next, .pages .prev, .shortcuts, .shortcuts li, .shortcuts li:first-child input[type='submit'], .shortcuts a, .shortcuts a:visited {
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -438,6 +438,18 @@ figcaption {
   .separator img {
     width: 30px !important;
     height: 30px !important; }
+
+.say-hello {
+  text-align: center;
+  margin: 4em 0;
+  padding: 1em;
+  border: 1px solid #27afda;
+  color: #111; }
+  .say-hello:hover {
+    border: 1px solid #f54546; }
+
+.twitter-handle {
+  color: #f54546; }
 
 .single-post h2 {
   float: none;

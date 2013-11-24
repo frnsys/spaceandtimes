@@ -357,6 +357,21 @@ figcaption {
   }
 }
 
+.say-hello {
+    @extend .has-transition;
+    text-align: center;
+    margin: 4em 0;
+    padding: 1em;
+    border: 1px solid $highlightColor;
+    color: #111;
+    &:hover {
+        border: 1px solid #f54546;
+    }
+}
+.twitter-handle {
+    color: #f54546;
+}
+
 .single-post {
   h2 {
     float:none;

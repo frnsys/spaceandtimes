@@ -19,6 +19,11 @@
 			<?php } ?>
 		</div>
 
+        <a href="https://twitter.com/frnsys"><div class="say-hello">
+            <?php $prompts = array('Say hello:', 'What did you think?', 'Comments?', 'Thanks for reading!'); ?>
+            <em><?php echo $prompts[array_rand($prompts)]; ?> <span class="twitter-handle">@frnsys</span</em>
+        </div></a>
+
 		<div class="separator">
 			<img src="<?php echo get_template_directory_uri(); ?>/images/separator.png">
 		</div>
