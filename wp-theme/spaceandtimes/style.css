@@ -271,12 +271,12 @@ a, a:visited, a:hover {
   top: 0;
   padding: 2em 2em;
   overflow: hidden;
-  font-family: 'Gibson', 'Helvetica Neue' 'Helvetica', 'Arial', 'sans-serif';
+  font-family: "Helvetica Neue" "Helvetica", "Arial", "sans-serif";
   font-weight: 100;
   text-align: center;
   z-index: 1; }
   .primary h1 {
-    margin: 0.6em 0 0 0; }
+    margin: 0.6em 0 0.4em 0; }
   .primary a, .primary a:visited, .primary a:hover {
     color: #111; }
   .primary:hover .shortcuts {
@@ -297,8 +297,7 @@ a, a:visited, a:hover {
 .categories {
   text-align: center;
   margin: 0 0 0.5em 0;
-  font-size: 0.7em;
-  text-transform: uppercase; }
+  font-size: 0.7em; }
   .categories a, .categories a:visited {
     /*color: #aaa;*/
     border-bottom: 1px dotted #27afda;
@@ -351,13 +350,14 @@ nav {
 
 h1 {
   text-align: center;
-  font-family: 'futura-pt', 'Gibson', 'Helvetica Neue' 'Helvetica', 'Arial', 'sans-serif';
-  text-transform: uppercase;
+  font-family: "futura-pt", "Helvetica Neue" "Helvetica", "Arial", "sans-serif";
+  text-transform: lowercase;
   position: relative;
   font-size: 1.6em; }
   h1 span {
     padding: 0.3em 0.4em 0.2em 0.4em;
-    background: #f8f8f8; }
+    background: #f8f8f8;
+    color: #383838; }
   h1 hr {
     border-top: none;
     height: 1px;
@@ -365,7 +365,7 @@ h1 {
     width: 100%;
     z-index: -1;
     position: absolute;
-    top: -0.4em; }
+    top: -0.25em; }
 
 /* Articles */
 article {
@@ -378,7 +378,7 @@ article {
     position: relative; }
     article header h2 {
       float: left;
-      font-family: 'futura-pt', 'Helvetica Neue' 'Helvetica', 'Arial', 'sans-serif';
+      font-family: "futura-pt", "Helvetica Neue" "Helvetica", "Arial", "sans-serif";
       font-style: normal;
       width: 100%; }
   article img {
@@ -403,30 +403,29 @@ h2 {
     color: #333; }
 
 h3 {
-  font-family: 'futura-pt', 'Helvetica Neue' 'Helvetica', 'Arial', 'sans-serif';
+  font-family: "futura-pt", "Helvetica Neue" "Helvetica", "Arial", "sans-serif";
   font-style: italic;
   color: #333;
   font-size: 1.5em;
   margin-top: 2em; }
 
 h4 {
-  font-family: 'futura-pt', 'Helvetica Neue' 'Helvetica', 'Arial', 'sans-serif';
+  font-family: "futura-pt", "Helvetica Neue" "Helvetica", "Arial", "sans-serif";
   font-style: italic;
   margin-top: 2.4em; }
 
 h5 {
-  font-family: 'Gibson', 'Helvetica Neue' 'Helvetica', 'Arial', 'sans-serif';
+  font-family: "Helvetica Neue" "Helvetica", "Arial", "sans-serif";
   font-weight: 100;
   font-size: 1.2em;
   text-align: center;
   margin: 0; }
 
 h6 {
-  font-family: 'Gibson', 'Helvetica Neue' 'Helvetica', 'Arial', 'sans-serif';
+  font-family: "Helvetica Neue" "Helvetica", "Arial", "sans-serif";
   color: #bbb;
   font-weight: 100;
-  margin: 0;
-  text-transform: uppercase; }
+  margin: 0; }
 
 figcaption {
   font-size: 0.9em;
@@ -482,7 +481,7 @@ figcaption {
 .pages .next, .pages .prev {
   padding: 0.2em 0.6em;
   color: #fff;
-  font-family: "Gibson";
+  font-family: "Helvetica Neue" "Helvetica", "Arial", "sans-serif";
   text-transform: uppercase;
   font-weight: bold;
   font-size: 0.9em;
@@ -508,7 +507,7 @@ figcaption {
 
 .shortcuts {
   width: 14em;
-  font-family: 'Gibson';
+  font-family: "Helvetica Neue" "Helvetica", "Arial", "sans-serif";
   font-weight: 100;
   text-align: left;
   opacity: 0.3;
@@ -531,7 +530,7 @@ figcaption {
       width: 100%;
       padding-right: 24px; }
     .shortcuts li:first-child input[type='text'] {
-      font-family: "Gibson", "Verdana", "Arial", "Helvetica", "sans-serif";
+      font-family: "Helvetica Neue" "Helvetica", "Arial", "sans-serif";
       font-style: italic;
       border: none;
       background: none;
@@ -608,7 +607,7 @@ pre {
   text-align: center;
   margin: 0 auto; }
   .search-form input[type='text'] {
-    font-family: 'Gibson', 'Helvetica Neue' 'Helvetica', 'Arial', 'sans-serif';
+    font-family: "Helvetica Neue" "Helvetica", "Arial", "sans-serif";
     font-weight: 100;
     font-size: 2.4em;
     padding: 0.2em 0.5em;
@@ -638,7 +637,7 @@ footer {
   width: 100%;
   padding: 1.2em 2em 1em 2em;
   color: #fff;
-  font-family: 'Gibson', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: "Helvetica Neue" "Helvetica", "Arial", "sans-serif";
   font-weight: 100;
   font-size: 1.2em;
   z-index: 100;
@@ -668,38 +667,6 @@ footer {
     footer .avatar {
       display: block;
       margin: 0 auto 2em auto; } }
-/* =============================================================================
-   ../fonts
-   ========================================================================== */
-/*
- * The ../fonts included are copyrighted by the vendor listed below.
- *
- * Vendor:      Canada Type
- * License URL: http://www.../fontspring.com/fflicense/canada-type
- *
- *
- */
-@font-face {
-  font-family: 'Gibson';
-  src: url("fonts/Gibson/Gibson-Bold-webfont.eot");
-  src: url("fonts/Gibson/Gibson-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Gibson/Gibson-Bold-webfont.woff") format("woff"), url("fonts/Gibson/Gibson-Bold-webfont.ttf") format("truetype"), url("fonts/Gibson/Gibson-Bold-webfont.svg#Gibson") format("svg");
-  font-weight: bold;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Gibson';
-  src: url("fonts/Gibson/Gibson-BoldItalic-webfont.eot");
-  src: url("fonts/Gibson/Gibson-BoldItalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Gibson/Gibson-BoldItalic-webfont.woff") format("woff"), url("fonts/Gibson/Gibson-BoldItalic-webfont.ttf") format("truetype"), url("fonts/Gibson/Gibson-BoldItalic-webfont.svg#Gibson") format("svg");
-  font-weight: bold;
-  font-style: italic; }
-
-@font-face {
-  font-family: 'Gibson';
-  src: url("fonts/Gibson/Gibson-Light-webfont.eot");
-  src: url("fonts/Gibson/Gibson-Light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Gibson/Gibson-Light-webfont.woff") format("woff"), url("fonts/Gibson/Gibson-Light-webfont.ttf") format("truetype"), url("fonts/Gibson/Gibson-Light-webfont.svg#Gibson") format("svg");
-  font-weight: 100;
-  font-style: normal; }
-
 /* =============================================================================
    Non-Semantic Helper Classes
    ========================================================================== */

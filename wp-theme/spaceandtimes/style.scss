@@ -143,7 +143,7 @@ a, a:visited, a:hover {
   z-index:1;
 
   h1 {
-    margin:0.6em 0 0 0;
+    margin:0.6em 0 0.4em 0;
   }
 
   a, a:visited, a:hover {
@@ -177,7 +177,6 @@ a, a:visited, a:hover {
     text-align: center;
     margin: 0 0 0.5em 0;
     font-size: 0.7em;
-    text-transform: uppercase;
     a, a:visited {
         /*color: #aaa;*/
         border-bottom: 1px dotted $highlight-color;
@@ -256,6 +255,7 @@ h1 {
   span {
     padding:0.3em 0.4em 0.2em 0.4em;
     background:#f8f8f8;
+    color: #383838;
   }
 
   hr {
@@ -265,7 +265,7 @@ h1 {
     width:100%;
     z-index:-1;
     position:absolute;
-    top:-0.4em;
+    top:-0.25em;
   }
 }
 
@@ -343,7 +343,6 @@ h6 {
   color:#bbb;
   font-weight:100;
   margin:0;
-  text-transform:uppercase;
 }
 figcaption {
   font-size:0.9em;
