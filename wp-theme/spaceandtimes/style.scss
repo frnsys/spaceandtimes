@@ -13,7 +13,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
    ========================================================================== */
 
 $highlight-color: #27AFDA;
-$primary-font: 'Helvetica Neue' 'Helvetica', 'Arial', 'sans-serif';
+$primary-font: 'nimbus-sans', 'Helvetica Neue' 'Helvetica', 'Arial', 'sans-serif';
 $header-font: 'futura-pt', 'Helvetica Neue' 'Helvetica', 'Arial', 'sans-serif';
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
@@ -111,9 +111,10 @@ body {
 }
 
 html {
-  color:#111;
-  font-family:"freight-text-pro", "serif";
+  font-family: $primary-font;
   height:100%;
+  font-weight: 100;
+  color: #262626;
 }
 
 .shell {
@@ -165,7 +166,6 @@ a, a:visited, a:hover {
   width:120px;
 }
 .author {
-    font-style: italic;
     margin: 0.1em 0 0.2em 0;
 }
 
@@ -247,7 +247,7 @@ nav {
 
 h1 {
   text-align:center;
-  font-family: $header-font;
+  font-family: $primary-font;
   text-transform: lowercase;
   position:relative;
   font-size:1.6em;
@@ -275,7 +275,6 @@ h1 {
 
 article {
   margin-bottom:6em;
-  font-size:1.05em;
 
   header {
     border-bottom:1px solid $highlight-color;
@@ -393,7 +392,7 @@ figcaption {
     margin-top:0;
     position:absolute;
     width:100%;
-    bottom:1.85em;
+    bottom:0.45em;
   }
 
   .author {
@@ -405,10 +404,12 @@ figcaption {
     display:inline-block;
     background:#f8f8f8;
     padding:0.2em 0.6em;
+    border-right:1px solid lighten($highlight-color, 24%);
+    border-left:1px solid lighten($highlight-color, 24%);
   }
 
   hr {
-    width:24%;
+    width:20%;
     margin:1em auto;
     border-top:1px solid lighten($highlight-color, 24%);
   }
@@ -463,6 +464,7 @@ figcaption {
   text-align:left;
   opacity:0.3;
   margin:2em auto 0 auto;
+  font-size: 0.9em;
 
   li {
     @extend .has-transition;
@@ -507,7 +509,7 @@ figcaption {
       margin:0px;
       border:none;
       position:absolute;
-      bottom:2px;
+      bottom:0px;
       right:0;
 
       background:url('images/nav.png');
