@@ -13,6 +13,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
    ========================================================================== */
 
 $highlight-color: #27AFDA;
+$alt-color: #f54546;
 $primary-font: 'nimbus-sans', 'Helvetica Neue' 'Helvetica', 'Arial', 'sans-serif';
 $header-font: 'futura-pt', 'Helvetica Neue' 'Helvetica', 'Arial', 'sans-serif';
 
@@ -182,7 +183,7 @@ a, a:visited, a:hover {
         border-bottom: 1px dotted $highlight-color;
         border-top: 1px dotted $highlight-color;
         &:hover {
-            color: #f54546;
+            color: $alt-color;
         }
     }
     li {
@@ -253,7 +254,7 @@ h1 {
   font-size:1.6em;
 
   span {
-    padding:0.3em 0.4em 0.2em 0.4em;
+    padding: 0.3em 0.3em 0.2em 0.3em;
     background:#f8f8f8;
     color: #383838;
   }
@@ -261,7 +262,7 @@ h1 {
   hr {
     border-top:none;
     height:1px;
-    background:#c9c9c9;
+    background: $alt-color;
     width:100%;
     z-index:-1;
     position:absolute;
@@ -365,11 +366,11 @@ figcaption {
     border: 1px solid $highlight-color;
     color: #111;
     &:hover {
-        border: 1px solid #f54546;
+        border: 1px solid $alt-color;
     }
 }
 .twitter-handle {
-    color: #f54546;
+    color: $alt-color;
 }
 
 .single-post {

@@ -355,13 +355,13 @@ h1 {
   position: relative;
   font-size: 1.6em; }
   h1 span {
-    padding: 0.3em 0.4em 0.2em 0.4em;
+    padding: 0.3em 0.3em 0.2em 0.3em;
     background: #f8f8f8;
     color: #383838; }
   h1 hr {
     border-top: none;
     height: 1px;
-    background: #c9c9c9;
+    background: #f54546;
     width: 100%;
     z-index: -1;
     position: absolute;
