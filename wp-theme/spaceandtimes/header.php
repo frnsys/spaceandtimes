@@ -47,7 +47,7 @@
 				<span>Space & Times</span>
 				<hr>
 			</h1>
-            <h6 class="author">Francis Tseng</h6>
+            <h6 class="author">by Francis Tseng</h6>
 		</a>
         <ul class="categories">
             <li><a href="/topic/code">code</a></li>
