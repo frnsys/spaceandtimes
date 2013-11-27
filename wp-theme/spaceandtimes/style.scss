@@ -424,7 +424,6 @@ figcaption {
     padding:0.2em 0.6em;
     color:#fff;
     font-family: $primary-font;
-    text-transform:uppercase;
     font-weight:bold;
     font-size:0.9em;
     display:inline-block;
@@ -434,11 +433,12 @@ figcaption {
   overflow:hidden;
   margin-bottom:4em;
   .next, .prev {
-    background:$highlight-color;
-    border:1px solid darken($highlight-color, 6%);
+    @extend .has-transition;
+    border:1px solid $highlight-color;
+    color: #111;
 
     &:hover {
-      background:darken($highlight-color, 8%);
+      background: 1px solid $alt-color; 
     }
   }
   .next {

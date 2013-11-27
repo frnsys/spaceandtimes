@@ -483,7 +483,6 @@ figcaption {
   padding: 0.2em 0.6em;
   color: #fff;
   font-family: "nimbus-sans", "Helvetica Neue" "Helvetica", "Arial", "sans-serif";
-  text-transform: uppercase;
   font-weight: bold;
   font-size: 0.9em;
   display: inline-block; }
@@ -492,10 +491,10 @@ figcaption {
   overflow: hidden;
   margin-bottom: 4em; }
   .pages .next, .pages .prev {
-    background: #27afda;
-    border: 1px solid #219bc1; }
+    border: 1px solid #27afda;
+    color: #111; }
     .pages .next:hover, .pages .prev:hover {
-      background: #2094b9; }
+      background: 1px solid #f54546; }
   .pages .next {
     float: right; }
   .pages .prev {
