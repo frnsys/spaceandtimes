@@ -260,7 +260,7 @@ html {
   height: auto !important;
   height: 100%;
   margin: 0 auto -3.5em auto;
-  max-width: 64em; }
+  max-width: 70em; }
 
 a, a:visited, a:hover {
   text-decoration: none;
@@ -345,7 +345,7 @@ nav {
 
 .content {
   margin: 0 auto;
-  max-width: 46em;
+  max-width: 52em;
   padding: 0 2em; }
 
 h1 {
@@ -369,7 +369,9 @@ h1 {
 
 /* Articles */
 article {
-  margin-bottom: 6em; }
+  margin-bottom: 6em;
+  background: #fcfcfc;
+  padding: 2em; }
   article header {
     border-bottom: 1px solid #27afda;
     margin: 0 0 1.6em 0;
@@ -449,35 +451,37 @@ figcaption {
 .twitter-handle {
   color: #f54546; }
 
-.single-post h2 {
-  float: none;
-  text-align: center;
-  font-size: 2.8em;
-  max-width: 600px;
-  margin: 0 auto; }
-.single-post header {
-  border: none;
-  position: relative; }
-.single-post .meta {
-  float: none;
-  text-align: center;
-  margin-top: 0;
-  position: absolute;
-  width: 100%;
-  bottom: 0.45em; }
-.single-post .author {
-  text-align: center;
-  width: 100%; }
-.single-post h6 {
-  display: inline-block;
-  background: #f8f8f8;
-  padding: 0.2em 0.6em;
-  border-right: 1px solid #8fd6ec;
-  border-left: 1px solid #8fd6ec; }
-.single-post hr {
-  width: 20%;
-  margin: 1em auto;
-  border-top: 1px solid #8fd6ec; }
+.single-post {
+  background: none; }
+  .single-post h2 {
+    float: none;
+    text-align: center;
+    font-size: 2.8em;
+    max-width: 600px;
+    margin: 0 auto; }
+  .single-post header {
+    border: none;
+    position: relative; }
+  .single-post .meta {
+    float: none;
+    text-align: center;
+    margin-top: 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0.45em; }
+  .single-post .author {
+    text-align: center;
+    width: 100%; }
+  .single-post h6 {
+    display: inline-block;
+    background: #f8f8f8;
+    padding: 0.2em 0.6em;
+    border-right: 1px solid #8fd6ec;
+    border-left: 1px solid #8fd6ec; }
+  .single-post hr {
+    width: 20%;
+    margin: 1em auto;
+    border-top: 1px solid #8fd6ec; }
 
 .pages .next, .pages .prev {
   padding: 0.2em 0.6em;

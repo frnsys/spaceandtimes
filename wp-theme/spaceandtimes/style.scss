@@ -123,7 +123,7 @@ html {
   height:auto !important;
   height:100%;
   margin:0 auto -3.5em auto;
-  max-width:64em;
+  max-width:70em;
 }
 
 a, a:visited, a:hover {
@@ -242,7 +242,7 @@ nav {
 
 .content {
   margin:0 auto;
-  max-width:46em;
+  max-width:52em;
   padding:0 2em;
 }
 
@@ -276,6 +276,8 @@ h1 {
 
 article {
   margin-bottom:6em;
+  background: #fcfcfc;
+  padding: 2em;
 
   header {
     border-bottom:1px solid $highlight-color;
@@ -374,6 +376,7 @@ figcaption {
 }
 
 .single-post {
+  background: none;
   h2 {
     float:none;
     text-align:center;
