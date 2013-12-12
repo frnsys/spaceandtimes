@@ -19,7 +19,7 @@
 		</div>
 
         <a href="https://twitter.com/frnsys"><div class="say-hello">
-            <?php $prompts = array('Say hello:', 'What did you think?', 'Comments?', 'Thanks for reading!'); ?>
+            <?php $prompts = array('Get in touch:'); ?>
             <em><?php echo $prompts[array_rand($prompts)]; ?> <span class="twitter-handle">@frnsys</span</em>
         </div></a>
 
