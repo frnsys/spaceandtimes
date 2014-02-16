@@ -11,9 +11,14 @@
 
 <?php wp_footer(); ?>
 
-<script src="<?php echo get_template_directory_uri(); ?>/js/libs/jquery-1.8.3.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/libs/jquery-2.1.0.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/rainbow.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/highlight.pack.js"></script>
+<script>
+$(document).ready(function() {
+    $('pre').each(function(i, e) {hljs.highlightBlock(e)});
+});
+</script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
